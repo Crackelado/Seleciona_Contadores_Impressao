@@ -34,7 +34,7 @@ except:
 # Realiza uma consulta de terminal, na pasta onde foram salvas as imagens, e joga saída para variável
 lista = run(['ls', '-t', atalho], stderr=PIPE, stdout=PIPE)
 
-# Converte os dados da pesquisa em texto e transforma em um array, com o indicador de quebra de linha como final do texto
+# Converte os dados da pesquisa em texto e transforma em um array, com o indicador de quebra de linha como final do texto ("\n")
 lista = lista.stdout.decode('utf-8').split('\n')
 
 # Loop que percorre o array de impressoras
